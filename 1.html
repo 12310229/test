@@ -11,6 +11,9 @@
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -22,7 +25,7 @@
 
         nav {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
             background-color: #444;
             padding: 10px;
         }
@@ -31,16 +34,19 @@
             text-decoration: none;
             color: #fff;
             font-size: 18px;
+            margin-bottom: 10px;
         }
 
         main {
             text-align: center;
             padding: 20px;
+            flex: 1;
         }
 
         .swiper-container {
             width: 80%;
             margin: auto;
+            max-width: 600px;
         }
 
         .swiper-slide img {
