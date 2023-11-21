@@ -28,6 +28,8 @@
             flex-direction: column;
             background-color: #444;
             padding: 10px;
+            max-width: 120px; /* 메뉴 너비 조절 */
+            margin-left: 10px; /* 왼쪽 여백 추가 */
         }
 
         nav a {
@@ -45,8 +47,9 @@
 
         .swiper-container {
             width: 80%;
-            margin: auto;
             max-width: 600px;
+            margin: auto;
+            overflow: hidden; /* 이미지가 페이지 바깥으로 나가지 않도록 처리 */
         }
 
         .swiper-slide img {
