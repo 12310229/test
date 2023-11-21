@@ -23,13 +23,17 @@
             padding: 15px;
         }
 
+        main {
+            display: flex;
+            flex: 1;
+        }
+
         nav {
             display: flex;
             flex-direction: column;
             background-color: #444;
             padding: 10px;
-            max-width: 120px; /* 메뉴 너비 조절 */
-            margin-left: 10px; /* 왼쪽 여백 추가 */
+            max-width: 120px;
         }
 
         nav a {
@@ -39,17 +43,11 @@
             margin-bottom: 10px;
         }
 
-        main {
-            text-align: center;
-            padding: 20px;
-            flex: 1;
-        }
-
         .swiper-container {
             width: 80%;
             max-width: 600px;
             margin: auto;
-            overflow: hidden; /* 이미지가 페이지 바깥으로 나가지 않도록 처리 */
+            overflow: hidden;
         }
 
         .swiper-slide img {
@@ -64,14 +62,14 @@
     <h1>웹페이지 예제</h1>
 </header>
 
-<nav>
-    <a href="#">메뉴1</a>
-    <a href="#">메뉴2</a>
-    <a href="#">메뉴3</a>
-    <a href="#">메뉴4</a>
-</nav>
-
 <main>
+    <nav>
+        <a href="#">메뉴1</a>
+        <a href="#">메뉴2</a>
+        <a href="#">메뉴3</a>
+        <a href="#">메뉴4</a>
+    </nav>
+
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="image1.jpg" alt="이미지 1"></div>
